@@ -1,5 +1,9 @@
 #!/bin/bash
 
+WORKDIR=/srv/s3intdev/ejoybox_github/ejoybox
+
+cd ${WORKDIR}
+
 curl -s https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_cn_3d/Newest/version_pc.conf -o /tmp/p10445_version_pc.conf
 diff S3-CN-OB-Publish/ob_cn_3d/Newest/version_pc.conf /tmp/p10445_version_pc.conf
 if [ $? -ne 0 ] ; then
