@@ -1,6 +1,7 @@
 #!/bin/bash
 
 WORKDIR=/srv/s3intdev/ejoybox_github/ejoybox
+OnFlag="$1"
 
 cd ${WORKDIR}
 
@@ -10,8 +11,14 @@ if [ $? -ne 0 ] ; then
 	echo "close rewrite p10445_version.config to nginx at $(date)" >> /tmp/p10445_hotfix_switch.log
 	sudo cp p10445-ob-hotfix.ejoy.com.conf_close /etc/nginx/sites-enabled/p10445-ob-hotfix.ejoy.com.conf
 	sudo nginx -s reload
+	echo "version file redirect to github Off at $(date)" >> /tmp/p10445_version_switch.log
 else
 	echo "source file vs github file is same at $(date)"
+	if [ "VVV$OnFlag" == "VVVOn" ] ; then
+		sudo cp p10445-ob-hotfix.ejoy.com.conf_open /etc/nginx/sites-enabled/p10445-ob-hotfix.ejoy.com.conf
+		sudo nginx -s reload
+		echo "version file redirect to github On at $(date)" >> /tmp/p10445_version_switch.log
+	fi
 fi
 
 
