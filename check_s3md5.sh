@@ -5,7 +5,7 @@ OnFlag="$1"
 
 cd ${WORKDIR}
 
-curl -s https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf -o /tmp/p10445_version.conf
+curl --connect-timeout 3 -s https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf -o /tmp/p10445_version.conf
 diff S3-CN-OB-Publish/ob_v5/Newest/version.conf /tmp/p10445_version.conf
 if [ $? -ne 0 ] ; then
 	echo "close rewrite p10445_version.config to nginx at $(date)" >> /tmp/p10445_hotfix_switch.log
