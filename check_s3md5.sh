@@ -10,6 +10,8 @@ if [ $? -ne 0 ] ; then
 	echo "close rewrite p10445_version.config to nginx at $(date)" >> /tmp/p10445_hotfix_switch.log
 	sudo cp p10445-ob-hotfix.ejoy.com.conf_close /etc/nginx/sites-enabled/p10445-ob-hotfix.ejoy.com.conf
 	sudo nginx -s reload
+else
+	echo "source file vs github file is same at $(date)"
 fi
 
 
