@@ -5,19 +5,11 @@ server {
         root /var/www/html;
         index index.html index.htm index.nginx-debian.html;
 
-	rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
+	#rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
 
         location ~/.git/ {
                 return 403;
         }
-
-        #location /S3-CN-OB-Publish/ {
-        #        proxy_pass http://47.107.126.149:8008;
-        #}
-
-        #location /S3-CN-OB-Debug/ {
-        #        proxy_pass http://47.107.126.149:8008;
-        #}
 
         access_log /var/log/nginx/access_p10445.log access;
         error_log /var/log/nginx/error_p10445.log;
