@@ -6,8 +6,10 @@ OnFlag="$1"
 cd ${WORKDIR}
 
 curl --connect-timeout 3 -s https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf -o /tmp/p10445_version.conf
+curlack=$?
 diff S3-CN-OB-Publish/ob_v5/Newest/version.conf /tmp/p10445_version.conf
-if [ $? -ne 0 ] ; then
+diffack=$?
+if [ $curlack -ne 0 ] || [ $diffack -ne 0 ] ; then
 	echo "close rewrite p10445_version.config to nginx at $(date)" >> /tmp/p10445_hotfix_switch.log
 	sudo cp p10445-ob-hotfix.ejoy.com.conf_close /etc/nginx/sites-enabled/p10445-ob-hotfix.ejoy.com.conf
 	sudo nginx -s reload
