@@ -1,6 +1,6 @@
 server {
 	listen 8000;
-	server_name p10445-ob-hotfix.ejoy.com;
+	server_name p10445-ob-hotfix.ejoy.com p10445-ob-hotfix-source.ejoy.com;
 
         root /var/www/html;
         index index.html index.htm index.nginx-debian.html;

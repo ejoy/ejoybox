@@ -1,11 +1,11 @@
 server {
 	listen 8000;
-	server_name p10445-ob-hotfix.ejoy.com;
+	server_name p10445-ob-hotfix.ejoy.com p10445-ob-hotfix-source.ejoy.com;
 
         root /var/www/html;
         index index.html index.htm index.nginx-debian.html;
 
-	#rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
+	rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
 
         location ~/.git/ {
                 return 403;
