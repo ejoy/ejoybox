@@ -6,7 +6,7 @@ server {
         index index.html index.htm index.nginx-debian.html;
 
 	rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
-	rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version_v2.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version_v2.conf permanent;
+	rewrite  ^/S3-CN-OB-Debug/ob_v5/Newest/version_v2.conf$  https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version_v2.conf permanent;
 
         location ~/.git/ {
                 return 403;
