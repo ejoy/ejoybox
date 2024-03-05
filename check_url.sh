@@ -9,6 +9,6 @@ rm -rf /tmp/orgURL.txt
 time curl -s "${url}" -o /tmp/orgURL.txt
 md5sum /tmp/orgURL.txt
 echo
-echo "========NEXT========="
+#echo "========NEXT========="
 echo
 done
