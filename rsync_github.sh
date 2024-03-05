@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export AWS_ENDPOINT_URL=https://710b556bf0edd48dfb6c4625315eb3ad.r2.cloudflarestorage.com/thislinux
 WORKDIR=/srv/s3intdev/ejoybox_github/ejoybox
 
 cd ${WORKDIR}
@@ -14,3 +15,6 @@ rsync -av /var/www/html/s3-i18n-client/s3g_ob_merge_20211014/Newest/*.conf s3-i1
 git add .
 git commit -a -m "${TM}:hear_no_evil:"
 git push
+
+
+aws s3 cp S3-CN-OB-Publish s3://S3-CN-OB-Publish/ --recursive --include "*.conf"
