@@ -5,8 +5,10 @@ OnFlag="$1"
 
 cd ${WORKDIR}
 
-time curl --connect-timeout 3 -s https://s3publish.thislinux.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf -o /tmp/p10445_version.conf
+## source
 time curl --connect-timeout 3 -s https://p10445-ob-hotfix-pp.ejoy.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf -o /tmp/p10445_version_source.conf
+## R2
+time curl --connect-timeout 3 -s https://s3publish.thislinux.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf -o /tmp/p10445_version.conf
 curlack=$?
 #diff S3-CN-OB-Publish/ob_v5/Newest/version.conf /tmp/p10445_version.conf
 diff /tmp/p10445_version_source.conf /tmp/p10445_version.conf
