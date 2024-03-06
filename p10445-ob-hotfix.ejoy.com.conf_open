@@ -5,7 +5,7 @@ server {
         root /var/www/html;
         index index.html index.htm index.nginx-debian.html;
 
-	rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://pub-21098e95ad6f4b47a238727ff79a8b7b.r2.dev/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
+	rewrite  ^/S3-CN-OB-Publish/ob_v5/Newest/version.conf$  https://pub-f3865b3c26e84a66b0f7dfdebbcf6bc6.r2.dev/S3-CN-OB-Publish/ob_v5/Newest/version.conf permanent;
 
         location ~/.git/ {
                 return 403;
