@@ -13,7 +13,7 @@ curlack=$?
 #diff S3-CN-OB-Publish/ob_v5/Newest/version.conf /tmp/p10445_version.conf
 diff /tmp/p10445_version_source.conf /tmp/p10445_version.conf
 diffack=$?
-if [ $curlack -ne 0 ] || [ $diffack -ne 0 ] ; then
+if [ $curlack -ne 0 ] || [ $diffack -ne 0 ] || [ "VVV$OnFlag" == "VVVOff" ] ; then
 	echo "close rewrite p10445_version.config to nginx at $(date)" >> /tmp/p10445_hotfix_switch.log
 	sudo cp p10445-ob-hotfix.ejoy.com.conf_close /etc/nginx/sites-enabled/p10445-ob-hotfix.ejoy.com.conf
 	sudo nginx -s reload
