@@ -19,4 +19,4 @@ git push
 #export AWS_ENDPOINT_URL=https://710b556bf0edd48dfb6c4625315eb3ad.r2.cloudflarestorage.com/thislinux
 #aws s3 cp S3-CN-OB-Publish s3://S3-CN-OB-Publish/ --recursive --include "*.conf"
 export AWS_ENDPOINT_URL=https://710b556bf0edd48dfb6c4625315eb3ad.r2.cloudflarestorage.com
-aws s3 sync /srv/s3intdev/ejoybox_github/ejoybox/S3-CN-OB-Publish s3://s3publish/
+aws s3 sync ${WORKDIR}/S3-CN-OB-Publish s3://s3publish/S3-CN-OB-Publish
