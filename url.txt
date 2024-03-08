@@ -1,10 +1,11 @@
 https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf
+https://gitlab.com/longweijin/s3g/-/raw/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 https://r2.thislinux.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 https://s3publish.thislinux.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 #https://gitee.com/ejoybox/S3/raw/master/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 #https://p10445-ob-hotfix-tfe2.ejoy.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 https://p10445-ob-hotfix-pp.ejoy.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
-##
+#
 #https://s3g-client-hotfix.sialiagames.com.tw/s3-i18n-publish/s3g_ob_merge_20211014/Newest/version_mobile.conf
 #https://s3g-client-hotfix-cdn.sialiagames.com.tw/s3-i18n-publish/s3g_ob_merge_20211014/Newest/version_mobile.conf
 #https://s3g-client-hotfix-cdn.qookkagames.com/s3-i18n-publish/s3g_ob_merge_20211014/Newest/version_mobile.conf
