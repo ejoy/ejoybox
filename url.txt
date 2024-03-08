@@ -1,7 +1,7 @@
-#https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf
+https://raw.githubusercontent.com/ejoy/ejoybox/main/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 https://r2.thislinux.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 https://s3publish.thislinux.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
-https://gitee.com/ejoybox/S3/raw/master/S3-CN-OB-Publish/ob_v5/Newest/version.conf
+#https://gitee.com/ejoybox/S3/raw/master/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 #https://p10445-ob-hotfix-tfe2.ejoy.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 https://p10445-ob-hotfix-pp.ejoy.com/S3-CN-OB-Publish/ob_v5/Newest/version.conf
 ##
